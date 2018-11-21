@@ -20,10 +20,11 @@ class Estudante():
 def main():
     #Alunos
     alunos = [Estudante("Ronaldo",313,0),Estudante("Ricardo",932,3),Estudante("Felipe",333,1),Estudante("Raissa",321,1)]
+    n = input("Digite o nome de um aluno")
     for i in alunos:
-        print(i.getNome())
-        print(i.getCreditos())
-    
-    
+        if(n == i.getNome()):
+            i.addCreditos(1)
+        else:
+            print("Aluno nao esta cadastrado")  
 if __name__ == "__main__":
     main()
