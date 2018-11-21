@@ -6,8 +6,7 @@ class Estudante():
         self.__creditos = creditos
     #Adicionar Creditos
     def addCreditos(self,quantidade):
-        creditos = self.__creditos
-        creditos += quantidade
+        self.__creditos += quantidade
     #Métodos acessores
     def setNome(self,novo_nome):
         self.__nome = novo_nome
@@ -21,7 +20,6 @@ def main():
     aluno01.setNome("Juricleison")
     print(aluno01.getNome())
     aluno01.addCreditos(20)
-    print(aluno01.getCreditos)
-    print(nome)
+    print(aluno01.getCreditos())
 if __name__ == "__main__":
     main()
