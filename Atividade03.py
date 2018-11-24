@@ -26,7 +26,7 @@ def main():
         if(n == i.getNome()):
             i.addCreditos(1)
         else:
-            if(k >= len(alunos)):
+            if(k >= len(alunos)-1):
                 print("Aluno nao esta cadastrado")  
             k += 1
 if __name__ == "__main__":
