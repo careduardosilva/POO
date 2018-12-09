@@ -30,3 +30,4 @@ class Aquecedor34():
     def MenosMorno(self):
         if(self.__temperatura > self.__min):
             self.__temperatura -= self.__incremento
+           #ka
