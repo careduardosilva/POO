@@ -1,0 +1,9 @@
+from ClockDisplay import ClockDisplay
+
+def main():
+   relogio = ClockDisplay()
+   print(relogio.getTime())
+   for i in range(6590):
+      relogio.timeTick()
+   print(relogio.getTime())
+main()
