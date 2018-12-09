@@ -11,7 +11,7 @@ class NumberDisplay:
             return "0" + str(self.__value)
         else:
             return str(self.__value)
-    def getValue(self):
+    def getValue(self): #Atividade 1
         return self.__value
-    def setValue(self, replacementValue):
+    def setValue(self, replacementValue): #Atividade 1
         self.__value = replacementValue
