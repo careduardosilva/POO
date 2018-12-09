@@ -1,3 +1,4 @@
+from Estudante import Estudante
 def main():
     #Alunos
     k = 0
