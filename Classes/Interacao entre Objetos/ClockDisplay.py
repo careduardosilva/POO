@@ -14,9 +14,9 @@ class ClockDisplay:
         return self.__hours.getDisplayValue()
     def getMinutes(self):
         return self.__minutes
-    def getTime(self):
+    def getTime(self): #Atividade 3
         return self.__displayString
-    def setTime(self,hour,minute):
+    def setTime(self,hour,minute): #Atividade 3
         if(hour < 24 and hour >= 0):
            self.__hours.setValue(hour)
         if (minute < 60 and hour >= 0):
