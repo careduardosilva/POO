@@ -1,3 +1,4 @@
+from Estudante import Estudante
 def main():
     #Aluno 01 BEGIN
     aluno01 = Estudante("Carlos",2017,4)
