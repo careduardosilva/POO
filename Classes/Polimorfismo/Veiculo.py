@@ -1,12 +1,9 @@
-class Veiculo:
-	def __init__(self, placaveiculo, fabricanteveiculo, numerorodas, tipoveiculo,marchas):
-		self._veiculos = list()
-		self._grau = 3
+lass Veiculo:
+	def __init__(self, placaveiculo, fabricanteveiculo, numerorodas, tipoveiculo):
 		self._placaVeiculo = placaveiculo
 		self._fabricanteVeiculo = fabricanteveiculo
 		self._numeroRodas = numerorodas
 		self._tipoVeiculo = tipoveiculo
-		self._marchas = marchas
 
 	def imprime(self):
 		print("Placa do veiculo: " + self._placaVeiculo + "\nFabricante do veiculo: " + self._fabricanteVeiculo + "\nNumero de rodas: " + str(self._numeroRodas) + "\nTipo de veiculo " + self._tipoVeiculo)
@@ -46,37 +43,3 @@ class Veiculo:
 			print ("Tipo de veiculo vazio")
 		else:
 			self._tipoVeiculo = tipoveiculo
-	def insere(self,objeto):
-		self._veiculos.append(objeto)
-	def printar(self):
-		for i in self._veiculos:
-			print(i.imprime())
-	def qntdVeiculo(self,tipoVeiculo):
-		n = 0
-		for i in self._veiculos:
-			if(i.getTipoVeiculo() == tipoVeiculo):
-				n += 1
-		return n
-				
-	def imprimeFrota(self):
-		contador = 0
-		for i in self._veiculos:
-			if(i.getTipoVeiculo() == "Carro" and self._grau == 3):
-				i.imprime()
-				contador += 1
-				print(contador)
-				if(contador == self.qntdVeiculo("Carro")):
-					self._grau -= 1
-					self.imprimeFrota()			
-			if(i.getTipoVeiculo() == "Moto" and self._grau == 2):
-				i.imprime()
-				contador += 1
-				if(contador == self.qntdVeiculo("Moto")):
-					self._grau -= 1
-					self.imprimeFrota()
-			if(i.getTipoVeiculo() == "Bicicleta" and self._grau == 1):
-				i.imprime()
-				contador += 1
-				if(contador == self.qntdVeiculo("Bicicleta")):
-					self._grau -= 1
-					self.imprimeFrota()	
